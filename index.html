@@ -65,20 +65,23 @@ body {font-family: "Lato", sans-serif}
   </ul>
 </div>-->
 
-
+<!--
 <div class="container">
   <br>
   <br>
   <div id="myCarousel" class="carousel slide container" data-ride="carousel">
+  -->
     <!-- Indicators -->
+    <!--
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
     </ol>
-
+-->
     <!-- Wrapper for slides -->
+    <!--
     <div class="carousel-inner" role="listbox">
       <div class="item active">
        
@@ -96,8 +99,9 @@ body {font-family: "Lato", sans-serif}
         <img src="dumptrump.jpg" alt="dumptrump" width="460" height="345">
       </div>
     </div>
-
+-->
     <!-- Left and right controls -->
+    <!--
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
@@ -109,6 +113,47 @@ body {font-family: "Lato", sans-serif}
   </div>
 </div>
 
+
+<div class="slideshow-class-goes-here">
+    <figure>
+        <img src="blacklivesmatter.jpg" width="100%" />
+        <figcaption></figcaption> 
+    </figure>
+     <figure>
+        <img src="school.jpg" width="100%" />
+        <figcaption></figcaption> 
+    </figure>
+     <figure>
+        <img src="wages.jpg" width="100%" />
+        <figcaption></figcaption> 
+    </figure>
+     <figure>
+        <img src="dumptrump.jpg" width="100%" />
+        <figcaption></figcaption> 
+    </figure>
+
+    <!-- more figures here as needed -->
+
+</div>
+<script src="js/better-simple-slideshow.min.js"></script>
+<link rel="stylesheet" href="css/simple-slideshow-styles.css">
+<script>
+	var opts = {
+            //auto-advancing slides? accepts boolean (true/false) or object
+            auto : { 
+                // speed to advance slides at. accepts number of milliseconds
+                speed : 3500, 
+                // pause advancing on mouseover? accepts boolean
+                pauseOnHover : true 
+            },
+            // show fullscreen toggle? accepts boolean
+            fullScreen : false, 
+            // support swiping on touch devices? accepts boolean, requires hammer.js
+            swipe : true 
+        };
+
+	makeBSS('.slideshow-class-goes-here', opts);
+</script>
 
 
 <!-- The Contact Section -->
