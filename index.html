@@ -121,24 +121,16 @@ body {font-family: "Lato", sans-serif}
 <link rel="stylesheet" href="css/simple-slideshow-styles.css">
 
 <script>
-	var opts = {
-            //auto-advancing slides? accepts boolean (true/false) or object
-            auto : { 
-                // speed to advance slides at. accepts number of milliseconds
-                speed : 3500, 
-                // pause advancing on mouseover? accepts boolean
-                pauseOnHover : true 
-            },
-            // show fullscreen toggle? accepts boolean
-            fullScreen : false, 
-            // support swiping on touch devices? accepts boolean, requires hammer.js
-            swipe : true 
-        };
-
-	makeBSS('.slideshow', opts);
+var opts = {
+    auto : false,
+    fullScreen : true,
+    swipe : false
+};
+makeBSS('.slideshow', opts);
 </script>
 
-<div class="slideshow" tabindex="1" autofocus="autofocus">
+
+<div class="slideshow" tabindex="2">
     <figure>
         <img src="blacklivesmatter.jpg" width="100%" />
         <figcaption></figcaption> 
